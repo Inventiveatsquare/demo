@@ -89,14 +89,14 @@ const ResetPassword = ({ token }: { token: string }) => {
               <div className="mb-10 text-center">
                 <Link href="/" className="mx-auto inline-block max-w-[160px]">
                   <Image
-                    src="/images/logo/logo.svg"
+                   src="/_next/image?url=%2Fimages%2Flogo%2Flogo.jpg&w=1920&q=75"
                     alt="logo"
                     width={140}
                     height={30}
                     className="dark:hidden"
                   />
                   <Image
-                    src="/images/logo/logo-white.svg"
+                   src="/_next/image?url=%2Fimages%2Flogo%2Flogo.jpg&w=1920&q=75"
                     alt="logo"
                     width={140}
                     height={30}

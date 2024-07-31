@@ -48,7 +48,7 @@ const Header = () => {
       <header
         className={`ud-header left-0 top-0 z-40 flex w-full items-center ${
           sticky
-            ? "shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
+            ? "shadow-nav fixed z-[999] border-b border-stroke bg-white  dark:border-dark-3/20 dark:bg-dark/10"
             : "absolute bg-transparent"
         }`}
       >
@@ -64,14 +64,14 @@ const Header = () => {
                 {pathUrl !== "/" ? (
                   <>
                     <Image
-                      src={`/images/logo/logo.svg`}
+                      src={`/_next/image?url=%2Fimages%2Flogo%2Flogo.jpg&w=1920&q=75`}
                       alt="logo"
                       width={240}
                       height={30}
                       className="header-logo w-full dark:hidden"
                     />
                     <Image
-                      src={`/images/logo/logo-white.svg`}
+                      src={`/_next/image?url=%2Fimages%2Flogo%2Flogo-white.jpg&w=1920&q=75`}
                       alt="logo"
                       width={240}
                       height={30}
@@ -83,8 +83,8 @@ const Header = () => {
                     <Image
                       src={`${
                         sticky
-                          ? "/images/logo/logo.svg"
-                          : "/images/logo/logo-white.svg"
+                          ? "/_next/image?url=%2Fimages%2Flogo%2Flogo.jpg&w=1920&q=75"
+                          : "/_next/image?url=%2Fimages%2Flogo%2Flogo-white.jpg&w=1920&q=75"
                       }`}
                       alt="logo"
                       width={140}
@@ -92,7 +92,7 @@ const Header = () => {
                       className="header-logo w-full dark:hidden"
                     />
                     <Image
-                      src={"/images/logo/logo-white.svg"}
+                      src={"/images/logo/logo-white.jpeg"}
                       alt="logo"
                       width={140}
                       height={30}
@@ -104,7 +104,7 @@ const Header = () => {
             </div>
             <div className="flex w-full items-center justify-between px-4">
               <div>
-                <button
+                {/* <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
                   aria-label="Mobile Menu"
@@ -137,7 +137,7 @@ const Header = () => {
                         : "bg-white"
                     }`}
                   />
-                </button>
+                </button> */}
                 <nav
                   id="navbarCollapse"
                   className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 lg:dark:bg-transparent ${
@@ -260,7 +260,7 @@ const Header = () => {
               </div>
               <div className="hidden items-center justify-end pr-16 sm:flex lg:pr-0">
                 {/* theme toggler */}
-                <button
+                {/* <button
                   aria-label="theme toggler"
                   onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                   className="flex h-8 w-8 items-center justify-center text-body-color duration-300 dark:text-white"
@@ -284,7 +284,7 @@ const Header = () => {
                       </g>
                     </svg>
                   </span>
-                </button>
+                </button> */}
 
                 {session?.user ? (
                   <>
